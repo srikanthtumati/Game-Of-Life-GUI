@@ -1,0 +1,5 @@
+javac -cp . --module-path Source\ Code/javafx-sdk-12.0.1/lib --add-modules javafx.controls Source\ Code/src/edu/rpi/cs/csci4963/u19/tumats/hw02/gol_gui/*.java
+mkdir -p Source\ Code/out/production/edu/rpi/cs/csci4963/u19/tumats/hw02/gol_gui
+mv Source\ Code/src/edu/rpi/cs/csci4963/u19/tumats/hw02/gol_gui/*.class Source\ Code/out/production/edu/rpi/cs/csci4963/u19/tumats/hw02/gol_gui
+javadoc -private -splitindex -use -author -version -d ./Javadoc -classpath "./Source Code/src:./Source Code/javafx-sdk-12.0.1/lib/src.zip:./Source Code/javafx-sdk-12.0.1/lib/javafx-swt.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.web.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.base.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.fxml.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.media.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.swing.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.controls.jar:./Source Code/javafx-sdk-12.0.1/lib/javafx.graphics.jar" edu.rpi.cs.csci4963.u19.tumats.hw02.gol_gui
+java -cp "Source Code/out/production" --module-path Source\ Code/javafx-sdk-12.0.1/lib --add-modules javafx.controls edu.rpi.cs.csci4963.u19.tumats.hw02.gol_gui.GameOfLifeUI
